@@ -5,6 +5,8 @@ import SearchBar from "./components/app-components/SearchBar";
 import Labtests from "./components/app-components/Labtests";
 import Banners from "./components/app-components/Banners";
 import Featured from "./components/app-components/Featured";
+import ActiveBookings from "./components/app-components/ActiveBookings";
+import BookLabTests from "./components/app-components/BookLabTests";
 
 interface PageConfig {
   id: string;
@@ -45,6 +47,8 @@ const App: React.FC = () => {
       <Labtests labTests={mainData} />
       <Banners bannerDetails={mainData} />
       <Featured featuredDetails={mainData} />
+      <ActiveBookings />
+      <BookLabTests bookTestsDetails={mainData} />
     </div>
   );
 };

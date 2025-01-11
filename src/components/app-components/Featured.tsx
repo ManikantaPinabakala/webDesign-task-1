@@ -71,22 +71,21 @@ const Featured: React.FC<FeaturedList> = ({ featuredDetails }) => {
     item.subCategories.includes(activeFeaturedFilter.toUpperCase())
   );
 
-  console.log(featuredCategories);
-  console.log(packagesArray);
-
   return (
     <div className="bg-[#E8F2FE] px-4 py-6">
       <div className="flex justify-between mb-6">
-        <h1 className="text-[#050A4E]">Featured Health Check-ups</h1>
+        <h1 className="text-[#050A4E] font-semibold">
+          Featured Health Check-ups
+        </h1>
         <button className="bg-transparent border-none text-[#1778F2]">
           View All
         </button>
       </div>
-      <div className="flex gap-3 overflow-auto mb-4">
+      <div className="flex gap-3 overflow-auto mb-4 py-2">
         {featuredCategories?.map((eachCategory, index) => (
           <Button
             key={index}
-            className={`bg-white hover:bg-white ${
+            className={`bg-white hover:bg-white main-button-shadow ${
               activeFeaturedFilter === eachCategory
                 ? "border border-[#1778F2] text-[#1778F2]"
                 : "border border-gray-100 text-black"
