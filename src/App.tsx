@@ -7,6 +7,10 @@ import Banners from "./components/app-components/Banners";
 import Featured from "./components/app-components/Featured";
 import ActiveBookings from "./components/app-components/ActiveBookings";
 import BookLabTests from "./components/app-components/BookLabTests";
+import LabsVisited from "./components/app-components/LabsVisited";
+import UserReviews from "./components/app-components/UserReviews";
+import LifestyleHealth from "./components/app-components/LifestyleHealth";
+import HowItWorks from "./components/app-components/HowItWorks";
 
 interface PageConfig {
   id: string;
@@ -38,7 +42,6 @@ const App: React.FC = () => {
 
   // @ts-ignore
   const mainData = data && data[0].page_config;
-  console.log(mainData);
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -49,6 +52,10 @@ const App: React.FC = () => {
       <Featured featuredDetails={mainData} />
       <ActiveBookings />
       <BookLabTests bookTestsDetails={mainData} />
+      <LabsVisited labsVisitedDetails={mainData} />
+      <UserReviews userReviewData={mainData} />
+      <LifestyleHealth lifeStylePackageDetails={mainData} />
+      <HowItWorks howItWorksDetails={mainData} />
     </div>
   );
 };

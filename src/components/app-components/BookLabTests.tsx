@@ -32,8 +32,8 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
   return (
     <div className="mt-6 mx-4">
       <div className="flex justify-between mb-6">
-        <h1 className="text-[#050A4E] font-semibold">Book Popular Lab Tests</h1>
-        <button className="bg-transparent border-none text-[#1778F2]">
+        <h1 className="text-main font-semibold">Book Popular Lab Tests</h1>
+        <button className="bg-transparent border-none text-premain">
           View More
         </button>
       </div>
@@ -43,7 +43,7 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
             key={index}
             className={`bg-white hover:bg-white main-button-shadow ${
               activeBookTestsFilter === eachCategory
-                ? "border border-[#1778F2] text-[#1778F2]"
+                ? "border border-premain text-premain"
                 : "border border-gray-100 text-black"
             }`}
             onClick={() => setActiveBookTestsFilter(eachCategory)}
@@ -55,12 +55,12 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
       <div className="flex flex-col gap-4">
         <div className="relative p-4 border border-[#E0E0E0] rounded-xl flex justify-between card-shadow-2">
           <div className="w-[55%]">
-            <p className="text-[#050A4E] text-xs font-medium mb-3">
+            <p className="text-main text-xs font-medium mb-3">
               Complete Blood Count (CBC) - EDTA Whole Blood
             </p>
             <div className="flex items-center gap-2 mb-3">
               <img src={reportTimeImage} alt="time" />
-              <p className="text-[#050A4E] text-xs">Reports in 10-12 hours</p>
+              <p className="text-main text-xs">Reports in 10-12 hours</p>
             </div>
             <div className="flex gap-3">
               <div className="flex gap-1 items-center my-1">
@@ -80,13 +80,13 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
                 <p className="text-xs font-normal text-[#459F49]">55% OFF</p>
               </div>
             </div>
-            <p className="text-xs font-semibold text-[#050A4E]">
+            <p className="text-xs font-semibold text-main">
               ₹ 500/-{" "}
               <span className="text-[10px] font-normal text-[#828282]">
                 Onwards
               </span>
             </p>
-            <button className="self-end bg-white border border-[#1778F2] rounded-xl px-5 py-1 text-[#1778F2] text-sm font-semibold mt-2">
+            <button className="self-end bg-white border border-premain rounded-xl px-5 py-1 text-premain text-sm font-semibold mt-2">
               Add
             </button>
           </div>
@@ -97,12 +97,12 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
         </div>
         <div className="relative p-4 border border-[#E0E0E0] rounded-xl flex justify-between card-shadow-2">
           <div className="w-[55%]">
-            <p className="text-[#050A4E] text-xs font-medium mb-3">
+            <p className="text-main text-xs font-medium mb-3">
               Complete Blood Count (CBC) - EDTA Whole Blood
             </p>
             <div className="flex items-center gap-2 mb-3">
               <img src={reportTimeImage} alt="time" />
-              <p className="text-[#050A4E] text-xs">Reports in 10-12 hours</p>
+              <p className="text-main text-xs">Reports in 10-12 hours</p>
             </div>
             <div className="flex gap-3">
               <div className="flex gap-1 items-center my-1">
@@ -122,13 +122,13 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
                 <p className="text-xs font-normal text-[#459F49]">55% OFF</p>
               </div>
             </div>
-            <p className="text-xs font-semibold text-[#050A4E]">
+            <p className="text-xs font-semibold text-main">
               ₹ 500/-{" "}
               <span className="text-[10px] font-normal text-[#828282]">
                 Onwards
               </span>
             </p>
-            <button className="self-end bg-white border border-[#1778F2] rounded-xl px-5 py-1 text-[#1778F2] text-sm font-semibold mt-2">
+            <button className="self-end bg-white border border-premain rounded-xl px-5 py-1 text-premain text-sm font-semibold mt-2">
               Add
             </button>
           </div>
@@ -139,12 +139,12 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
         </div>
         <div className="relative p-4 border border-[#E0E0E0] rounded-xl flex justify-between card-shadow-2">
           <div className="w-[55%]">
-            <p className="text-[#050A4E] text-xs font-medium mb-3">
+            <p className="text-main text-xs font-medium mb-3">
               Complete Blood Count (CBC) - EDTA Whole Blood
             </p>
             <div className="flex items-center gap-2 mb-3">
               <img src={reportTimeImage} alt="time" />
-              <p className="text-[#050A4E] text-xs">Reports in 10-12 hours</p>
+              <p className="text-main text-xs">Reports in 10-12 hours</p>
             </div>
             <div className="flex gap-3">
               <div className="flex gap-1 items-center my-1">
@@ -160,13 +160,13 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
                 <p className="text-xs font-normal text-[#459F49]">55% OFF</p>
               </div>
             </div>
-            <p className="text-xs font-semibold text-[#050A4E]">
+            <p className="text-xs font-semibold text-main">
               ₹ 500/-{" "}
               <span className="text-[10px] font-normal text-[#828282]">
                 Onwards
               </span>
             </p>
-            <button className="self-end bg-white border border-[#1778F2] rounded-xl px-5 py-1 text-[#1778F2] text-sm font-semibold mt-2">
+            <button className="self-end bg-white border border-premain rounded-xl px-5 py-1 text-premain text-sm font-semibold mt-2">
               Add
             </button>
           </div>
@@ -177,12 +177,12 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
         </div>
         <div className="relative p-4 border border-[#E0E0E0] rounded-xl flex justify-between card-shadow-2">
           <div className="w-[55%]">
-            <p className="text-[#050A4E] text-xs font-medium mb-3">
+            <p className="text-main text-xs font-medium mb-3">
               Complete Blood Count (CBC) - EDTA Whole Blood
             </p>
             <div className="flex items-center gap-2 mb-3">
               <img src={reportTimeImage} alt="time" />
-              <p className="text-[#050A4E] text-xs">Reports in 10-12 hours</p>
+              <p className="text-main text-xs">Reports in 10-12 hours</p>
             </div>
             <div className="flex gap-3">
               <div className="flex gap-1 items-center my-1">
@@ -198,13 +198,13 @@ const BookLabTests: React.FC<BookTestsList> = ({ bookTestsDetails }) => {
                 <p className="text-xs font-normal text-[#459F49]">55% OFF</p>
               </div>
             </div>
-            <p className="text-xs font-semibold text-[#050A4E]">
+            <p className="text-xs font-semibold text-main">
               ₹ 500/-{" "}
               <span className="text-[10px] font-normal text-[#828282]">
                 Onwards
               </span>
             </p>
-            <button className="self-end bg-white border border-[#1778F2] rounded-xl px-5 py-1 text-[#1778F2] text-sm font-semibold mt-2">
+            <button className="self-end bg-white border border-premain rounded-xl px-5 py-1 text-premain text-sm font-semibold mt-2">
               Add
             </button>
           </div>

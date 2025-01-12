@@ -19,13 +19,13 @@ const Header: React.FC = () => {
         </div>
       </div>
       <div className="w-[30%] flex justify-around">
-        <div className="relative inline-block">
+        <div className="relative inline-block cursor-pointer">
           <img src={wallet} alt="wallet" className="scale-125" />
           <span className="absolute -top-2 -right-4 bg-[#156DDC] text-white text-[8px] rounded-full border-white border-2 px-1 py-0.5">
             4529
           </span>
         </div>
-        <div className="relative inline-block">
+        <div className="relative inline-block cursor-pointer">
           <img src={shoppingCart} alt="cart" className="scale-125" />
           <span className="absolute -top-2 -right-3 bg-[#156DDC] text-white text-[8px] rounded-full border-white border-2 px-1.5 py-0.5">
             1

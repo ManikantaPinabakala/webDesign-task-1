@@ -8,9 +8,9 @@ import {
 
 import avatar from "@/assets/avatar.png";
 import success from "@/assets/success.png";
-import chevronRight from "@/assets/chevron-right.png";
 import { Separator } from "../ui/separator";
 import Autoplay from "embla-carousel-autoplay";
+import { ChevronRight } from "lucide-react";
 
 interface Bookings {
   doctor: string;
@@ -65,8 +65,8 @@ const ActiveBookings: React.FC = () => {
   return (
     <div className="mt-6 mx-4">
       <div className="flex justify-between mb-6">
-        <h1 className="text-[#050A4E] font-semibold">Your Active Bookings</h1>
-        <button className="bg-transparent border-none text-[#1778F2]">
+        <h1 className="text-main font-semibold">Your Active Bookings</h1>
+        <button className="bg-transparent border-none text-premain">
           View All
         </button>
       </div>
@@ -89,7 +89,7 @@ const ActiveBookings: React.FC = () => {
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-3">
                       <img src={avatar} alt="avatar" className="scale-[120%]" />
-                      <p className="text-[#050A4E] font-normal text-xs">
+                      <p className="text-main font-normal text-xs">
                         {eachBooking.doctor}
                       </p>
                     </div>
@@ -99,38 +99,38 @@ const ActiveBookings: React.FC = () => {
                         alt="success"
                         className="scale-[120%]"
                       />
-                      <h1 className="text-[#050A4E] text-sm font-semibold">
+                      <h1 className="text-main text-sm font-semibold">
                         Appointment Confirmed
                       </h1>
                     </div>
                   </div>
                   <div className="bg-white rounded-full full-shadow p-2 cursor-pointer">
-                    <img src={chevronRight} />
+                    <ChevronRight color="#1778F2" />
                   </div>
                 </div>
                 <div className="bg-[#F6FAFF] border-[0.5px] border-[#D6E8FF] flex justify-around gap-2 text-center rounded-2xl p-3">
                   <div className="self-center">
-                    <p className="text-[#050A4E] text-xs font-medium">
+                    <p className="text-main text-xs font-medium">
                       {eachBooking.date}
                     </p>
-                    <p className="text-[#050A4E] text-[10px] font-light">
+                    <p className="text-main text-[10px] font-light">
                       {eachBooking.day}
                     </p>
                   </div>
                   <Separator color="#D6E8FF" orientation="vertical" />
                   <div className="self-center">
-                    <p className="text-[#050A4E] text-xs font-medium">
+                    <p className="text-main text-xs font-medium">
                       {eachBooking.time}
                       <span className="text-[10px]">
                         {eachBooking.timeOfTheDay}
                       </span>
                     </p>
-                    <p className="text-[#050A4E] text-[10px] font-light">
+                    <p className="text-main text-[10px] font-light">
                       {eachBooking.agenda}
                     </p>
                   </div>
                   <Separator orientation="vertical" />
-                  <p className="self-center text-[#050A4E] text-xs font-medium">
+                  <p className="self-center text-main text-xs font-medium">
                     {eachBooking.numLabTests}{" "}
                     <span className="text-[10px]">Lab Tests</span>
                   </p>

@@ -74,10 +74,8 @@ const Featured: React.FC<FeaturedList> = ({ featuredDetails }) => {
   return (
     <div className="bg-[#E8F2FE] px-4 py-6">
       <div className="flex justify-between mb-6">
-        <h1 className="text-[#050A4E] font-semibold">
-          Featured Health Check-ups
-        </h1>
-        <button className="bg-transparent border-none text-[#1778F2]">
+        <h1 className="text-main font-semibold">Featured Health Check-ups</h1>
+        <button className="bg-transparent border-none text-premain">
           View All
         </button>
       </div>
@@ -87,7 +85,7 @@ const Featured: React.FC<FeaturedList> = ({ featuredDetails }) => {
             key={index}
             className={`bg-white hover:bg-white main-button-shadow ${
               activeFeaturedFilter === eachCategory
-                ? "border border-[#1778F2] text-[#1778F2]"
+                ? "border border-premain text-premain"
                 : "border border-gray-100 text-black"
             }`}
             onClick={() => setActiveFeaturedFilter(eachCategory)}
@@ -102,18 +100,18 @@ const Featured: React.FC<FeaturedList> = ({ featuredDetails }) => {
             key={index}
             className="relative bg-white px-6 py-8 rounded-xl min-w-full"
           >
-            <h1 className="min-h-10 text-base text-[#050A4E] font-semibold mb-2">
+            <h1 className="min-h-10 text-base text-main font-semibold mb-2">
               {eachCheckUp.packageDisplayName}
             </h1>
             <div className="flex items-center gap-2 mb-3">
               <img src={reportTimeImage} alt="time" />
-              <p className="text-xs text-[#1778F2]">
+              <p className="text-xs text-premain">
                 {eachCheckUp.reportsTatText}
               </p>
             </div>
             <div className="flex gap-12 text-left">
               <div>
-                <p className="text-xs text-[#050A4E] font-medium">
+                <p className="text-xs text-main font-medium">
                   {eachCheckUp.testCount} Tests
                 </p>
                 <ul className="pl-4">
@@ -127,7 +125,7 @@ const Featured: React.FC<FeaturedList> = ({ featuredDetails }) => {
               </div>
               {eachCheckUp.isRadiologyIncluded && (
                 <div>
-                  <p className="text-xs text-[#050A4E] font-medium">Includes</p>
+                  <p className="text-xs text-main font-medium">Includes</p>
                   <div className="flex items-center gap-2 mb-3">
                     <img src={radiology} alt="radiology" />
                     <p className="text-[#4F4F4F] text-[10px] my-1">Radiology</p>
@@ -137,14 +135,14 @@ const Featured: React.FC<FeaturedList> = ({ featuredDetails }) => {
             </div>
             <div className="bg-[#F8F8F8] rounded-lg flex gap-[6.5rem] mt-3 p-4 mb-4">
               <div>
-                <p className="text-[#050A4E] text-[10px]">Fasting</p>
+                <p className="text-main text-[10px]">Fasting</p>
                 <p className="text-[#4F4F4F] text-[10px] my-1">
                   {eachCheckUp.fastingHoursText}
                 </p>
               </div>
               {eachCheckUp.isAvailable && (
                 <div>
-                  <p className="text-[#050A4E] text-[10px]">Available at</p>
+                  <p className="text-main text-[10px]">Available at</p>
                   <div className="flex gap-1 items-center my-1">
                     <img src={home} alt="home" className="h-3" />
                     <p className="text-[#4F4F4F] text-[10px]">Home</p>
@@ -153,13 +151,13 @@ const Featured: React.FC<FeaturedList> = ({ featuredDetails }) => {
               )}
             </div>
             <div className="flex justify-between items-center">
-              <h1 className="text-base text-[#050A4E] font-semibold">
+              <h1 className="text-base text-main font-semibold">
                 ₹ {eachCheckUp.price}
               </h1>
-              <div className="border border-[#1778F2] flex items-center gap-4 px-3 py-[3px] rounded-xl">
-                <p className="text-[#1778F2] text-sm cursor-pointer">-</p>
-                <p className="text-[#1778F2] text-sm">1</p>
-                <p className="text-[#1778F2] text-sm cursor-pointer">+</p>
+              <div className="border border-premain flex items-center gap-4 px-3 py-[3px] rounded-xl">
+                <p className="text-premain text-sm cursor-pointer">-</p>
+                <p className="text-premain text-sm">1</p>
+                <p className="text-premain text-sm cursor-pointer">+</p>
               </div>
             </div>
             {eachCheckUp.isSponsored && (
