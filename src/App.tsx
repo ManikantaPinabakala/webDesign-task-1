@@ -40,8 +40,7 @@ const App: React.FC = () => {
     getApiData();
   }, []);
 
-  // @ts-ignore
-  const mainData = data && data[0].page_config;
+  const mainData = data && (data as any)[0].page_config;
 
   return (
     <div className="min-h-screen bg-white flex flex-col">

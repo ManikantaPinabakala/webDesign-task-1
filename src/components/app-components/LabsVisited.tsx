@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { GrLocation } from "react-icons/gr";
 import { LucideClock5 } from "lucide-react";
 import { LuShieldCheck } from "react-icons/lu";
+import { FaStar } from "react-icons/fa";
 import apollo1 from "@/assets/apollo1.png";
 import labTubes from "@/assets/labTubes.png";
 import locations from "@/assets/locations.png";
@@ -31,7 +32,7 @@ const LabsVisited: React.FC<LabsMilestoneList> = ({ labsVisitedDetails }) => {
         </button>
       </div>
       <div className="flex gap-4 overflow-auto mb-8">
-        <div className="rounded-xl card-shadow-3 w-fit min-w-[80%]">
+        <div className="relative rounded-xl card-shadow-3 w-fit min-w-custom sm:min-w-[50%] lg:min-w-[20%]">
           <img src={apollo1} alt="apollo 1" className="mb-4" />
           <div className="flex flex-col gap-2 px-4 pt-1 pb-3">
             <p className="font-medium text-sm text-[#252D38]">
@@ -46,8 +47,14 @@ const LabsVisited: React.FC<LabsMilestoneList> = ({ labsVisitedDetails }) => {
               <p>Next Slot: 07:30 AM, Tomorrow</p>
             </div>
           </div>
+          <div className="absolute top-20 right-0 flex gap-1 bg-[#FFFAD6] py-2 px-3 rounded-tl-3xl rounded-bl-3xl">
+            <FaStar fill="#F7BD1B" size={14} />
+            <p className="text-[#252D38] text-[10px] font-medium">
+              4.5/5 (120 ratings)
+            </p>
+          </div>
         </div>
-        <div className="rounded-xl card-shadow-3 w-fit min-w-[80%]">
+        <div className="relative rounded-xl card-shadow-3 w-fit min-w-custom sm:min-w-[50%] lg:min-w-[20%]">
           <img src={apollo1} alt="apollo 1" className="mb-4" />
           <div className="flex flex-col gap-2 px-4 pt-1 pb-3">
             <p className="font-medium text-sm text-[#252D38]">
@@ -61,6 +68,12 @@ const LabsVisited: React.FC<LabsMilestoneList> = ({ labsVisitedDetails }) => {
               <LucideClock5 height={16} width={16} />
               <p>Next Slot: 07:30 AM, Tomorrow</p>
             </div>
+          </div>
+          <div className="absolute top-20 right-0 flex gap-1 bg-[#FFFAD6] py-2 px-3 rounded-tl-3xl rounded-bl-3xl">
+            <FaStar fill="#F7BD1B" size={14} />
+            <p className="text-[#252D38] text-[10px] font-medium">
+              4.5/5 (120 ratings)
+            </p>
           </div>
         </div>
       </div>

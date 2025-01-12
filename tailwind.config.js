@@ -77,5 +77,16 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addComponents }) {
+      addComponents({
+        "@media (max-width: 639px)": {
+          ".min-w-custom": {
+            minWidth: "70%",
+          },
+        },
+      });
+    },
+  ],
 };
