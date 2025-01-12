@@ -30,3 +30,5 @@
   - Lifestyle Health Checkups
   - How it works (with some additional info)
   - FAQs
+
+`You can visit the deployed link of this website following the link provided in the "About" section of this repository. This app is especially built for mobile sizes (small-devices), so if you're opening this on a larger screen, UI might be unusual in some cases, but most of it should still be fine any sized devices.`
